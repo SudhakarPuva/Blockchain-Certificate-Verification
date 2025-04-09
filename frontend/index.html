@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertifyNow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header >
+        <div class="container" >
+            <div class="logo">
+                <img src="/blockchain (1).png" alt="Logo" class="logo-icon" style="width: 40px; height: 40px;">
+                <h1>Certify<span>Now</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#login" class="cta-button" id="login-button">Login</a></li>
+                    <li><a href="#signup" class="cta-button" id="signup-button">Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <!-- Background Video -->
+        <div class="video-container">
+            <video autoplay muted loop playsinline id="bg-video">
+                <source src="/videoplayback.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            
+        </div>
+    
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1>Verify Your Certificates Instantly</h1>
+            <p>Ensure authenticity and trust in your qualifications.</p>
+            <button id="cta-button">Get Started</button>
+        </div>
+    </section>
+    <section>
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step" data-aos="zoom-out-left">
+                        <div class="step-icon">
+                            <i class="fas fa-pencil-alt"></i> <!-- Font Awesome icon -->
+                        </div>
+                        <h3>Enter Certificate Details</h3>
+                        <p>Fill in the required information about the certificate you want to verify.</p>
+                    </div>
+                    <div class="step" data-aos="zoom-out-left">
+                        <div class="step-icon">
+                            <i class="fas fa-check-circle"></i> <!-- Font Awesome icon -->
+                        </div>
+                        <h3>Click Verify</h3>
+                        <p>Press the verify button to initiate the verification process.</p>
+                    </div>
+                    <div class="step" data-aos="zoom-out-left">
+                        <div class="step-icon">
+                            <i class="fas fa-thumbs-up"></i> <!-- Font Awesome icon -->
+                        </div>
+                        <h3>Get Results</h3>
+                        <p>Receive instant results confirming the authenticity of the certificate.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="benefits" class="benefits">
+            <div class="container">
+                <h2>Benefits of Using Our Service</h2>
+                <div class="benefit-list">
+                    <div class="benefit" data-aos="fade-up">
+                        <div class="benefit-icon">✔️</div>
+                        <h3>Fast Verification</h3>
+                        <p>Get instant results without the hassle of long waiting times.</p>
+                    </div>
+                    <div class="benefit" data-aos="fade-up">
+                        <div class="benefit-icon">🔒</div>
+                        <h3>Secure Process</h3>
+                        <p>Your data is protected with industry-standard security measures.</p>
+                    </div>
+                    <div class="benefit" data-aos="fade-down">
+                        <div class="benefit-icon">✅</div>
+                        <h3>Trusted by Institutions</h3>
+                        <p>Our service is recognized and trusted by educational institutions worldwide.</p>
+                    </div>
+                    <div class="benefit" data-aos="fade-down">
+                        <div class="benefit-icon">📈</div>
+                        <h3>Easy to Use</h3>
+                        <p>Our user-friendly interface makes verification a breeze.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="use-cases" class="use-cases">
+            <div class="container">
+                <h2>Use Cases</h2>
+                <div class="use-case-list">
+                    <div class="use-case" data-aos="flip-down">
+                        <h3>For Employers</h3>
+                        <p>Verify the qualifications of potential candidates quickly and efficiently to ensure you hire the best talent.</p>
+                    </div>
+                    <div class="use-case" data-aos="flip-up">
+                        <h3>For Educational Institutions</h3>
+                        <p>Confirm the authenticity of certificates presented by students and applicants to maintain academic integrity.</p>
+                    </div>
+                    <div class="use-case" data-aos="flip-down">
+                        <h3>For Job Seekers</h3>
+                        <p>Provide verified proof of your qualifications to potential employers, enhancing your credibility.</p>
+                    </div>
+                    <div class="use-case" data-aos="flip-up">
+                        <h3>For Government Agencies</h3>
+                        <p>Ensure that the qualifications of applicants for licenses and permits are legitimate and verified.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faqs" class="faqs">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <h3>What is certificate verification?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Certificate verification is the process of confirming the authenticity of a certificate issued by an educational institution or organization.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <h3>How long does the verification process take?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The verification process is typically instant, providing you with immediate results.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <h3>Is my data secure?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we use industry-standard security measures to protect your data during the verification process.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <h3>Can I verify multiple certificates at once?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Currently, our service allows for one certificate verification at a time, but we are working on expanding this feature.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cta" class="cta">
+            <div class="container">
+                <h2>Ready to Verify Your Certificates?</h2>
+                <p>Join thousands of satisfied users who trust our service for quick and secure certificate verification.</p>
+                <button id="cta-button">Get Started Now</button>
+            </div>
+        </section>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 CertVerify. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>      
+    <script>AOS.init();</script>
+</body>
+</html>
